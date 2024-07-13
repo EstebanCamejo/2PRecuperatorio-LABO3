@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segundo Parcial</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    
+    <div id="loading-contenedor">
+        <div id="loading">
+          <img id="loading-gif" src="./loading-windows98.gif" alt="Cargando...">
+        </div>
+    </div>
+
+    <div class="contenedor" id ="formDatos" >
+        <h2>Form Datos</h2><br>
+       
+        <table id="tabla">
+            <thead>
+                <tr>
+                    <th value="asc">Id</th>
+                    <th value="asc">Nombre</th>
+                    <th value="asc">Apellido</th>
+                    <th value="asc">Edad</th>                 
+                    
+                    <th value="asc">Alterego</th>                     
+                    <th value="asc">Ciudad</th> 
+                    <th value="asc">Publicado</th> 
+                    
+                    <th value="asc">Enemigos</th>
+                    <th value="asc">Robos</th>
+                    <th value="asc">Asesinatos</th>
+           
+                    <th value="asc">Modificar</th>
+                    <th value="asc">Eliminar</th>                    
+                </tr>                           
+            </thead>
+        </table>
+        <br>
+        <br>
+        <button id="btnAgregar" class="botones">Agregar Elemento</button>
+    </div>
+
+    <div class="contenedorABM" id = "formAbm">
+        <h2>Formulario ABM</h2>
+            
+            <div class="form-row">
+                <label>Tipo:</label>
+                    <Select id="selABM">
+                        <option value="Ciudadano">Heroe</option>
+                        <option value="Extranjero">Villano</option>
+                    </Select>
+            </div>
+
+            <form id="formulario">
+
+                <div class="form-row">
+                    <label>Id:</label>
+                    <input type="text" id="textId" disabled> <br>
+                </div>
+
+                <div class="form-row">
+                    <label>Nombre:</label>    
+                    <input type="text" id="textNombre" required> <br>
+                </div>
+
+                <div class="form-row">
+                    <label>Apellido:</label>    
+                    <input type="text" id="textApellido" required> <br>
+                </div>
+
+                <div class="form-row">
+                    <label>Edad:</label>    
+                    <input type="number" id="textFechaDeNacimiento" required name="edad" min="0"> <br>
+                </div>
+                
+                <div id="camposCiudadano">
+
+                            <div class="form-row">
+                                <label >Alterego:</label>    
+                                <input type="text" id="textDni" required > <br>
+                            </div>
+                            <div class="form-row">
+                                <label >Ciudad:</label>    
+                                <input type="text" id="textCiudad" required> <br>
+                            </div>
+                            <div class="form-row">
+                                <label >Publicado:</label>    
+                                <input type="number" id="texPublicado" required min="1940"> <br>
+                            </div>
+
+                </div>
+
+                <div id="camposExtranjero">        
+
+                            <div class="form-row">        
+                                <label >Enemigo:</label>    
+                                <input type="text" id="textPaisDeOrigen" required> <br>
+                            </div>
+                            <div class="form-row">        
+                                <label >Robos:</label>    
+                                <input type="number" id="textRobos" min="0" required> <br>
+                            </div>
+                            <div class="form-row">        
+                                <label >Asesinatos:</label>    
+                                <input type="number" id="textAsesinatos" min="0" required> <br>
+                            </div>
+
+                </div>
+            
+
+                <div class="form-row">
+                    <button id="btnAlta" class="botones">Aceptar</button>
+                    <button id="btnModificar" class="botones">Modificar</button>    
+                <!--    <button id="btnEliminar" class="botones">Eliminar</button>-->
+                    <button id="btnCancelar" class="botones">Cancelar</button>                    
+                </div>
+
+            </form>
+    </div>
+    <script src="pp.js"> </script>
+</body>
+</html>

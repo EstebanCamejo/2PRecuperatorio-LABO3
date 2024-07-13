@@ -1,0 +1,125 @@
+html{
+    background-color: #79b1d8;
+}
+.contenedorABM {
+    width: 300px; /* Ancho del recuadro */
+    margin: 0 auto; /* Centra horizontalmente el recuadro */
+    padding: 20px; /* Añade un espacio interno al recuadro */
+    border: 2px solid #79b1d8; /* Añade un borde al recuadro */
+    border-radius: 10px; /* Agrega esquinas redondeadas al recuadro */
+    background-color: rgb(240, 246, 255);
+}
+
+ h2 {
+    text-align: center; /* Centra el título */
+    margin-bottom: 20px; /* Agrega espacio debajo del título */
+}
+
+.contenedorABM label {
+    display: block; /* Muestra las etiquetas en bloques */
+    margin-bottom: 10px; /* Agrega espacio debajo de cada etiqueta */
+}
+
+.contenedorABM input, 
+.contenedorABM select, 
+.contenedorABM button {
+    width: calc(100% - 20px); /* Establece el ancho de los elementos de entrada, selección y botón al 100% del ancho del contenedor menos el espacio del padding */
+    margin-bottom: 10px; /* Agrega espacio debajo de cada elemento de entrada, selección y botón */
+}
+
+.contenedor {
+    width: 1300px; /* Ancho del recuadro */
+    margin: 0 auto; /* Centra horizontalmente el recuadro */
+    padding: 20px; /* Añade un espacio interno al recuadro */
+    border: 2px solid #ccc; /* Añade un borde al recuadro */
+    border-radius: 10px; /* Agrega esquinas redondeadas al recuadro */
+    background-color: rgb(240, 246, 255);
+}
+
+.contenedor label {
+    display: block; /* Muestra las etiquetas en bloques */
+    margin-bottom: 10px; /* Agrega espacio debajo de cada etiqueta */
+    
+}
+
+.contenedor select, 
+.contenedor input[type="number"], 
+.contenedor button {
+  /*  width: calc(100% - 20px); /* Establece el ancho de los elementos de selección, número y botón al 100% del ancho del contenedor menos el espacio del padding */
+    margin-bottom: 10px; /* Agrega espacio debajo de cada elemento de selección, número y botón */
+}
+
+#datosContainer {
+    margin-top: 10px; /* Agrega espacio encima del contenedor de datos */
+}
+
+#datosContainer input[type="checkbox"],
+#datosContainer label {
+    display: inline-block; /* Muestra los checkboxes y labels en línea */
+    margin-right: 10px; /* Agrega espacio a la derecha de cada checkbox */
+}
+
+.tabla {
+    border: 2px solid #000;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+#tabla #datosContainer {
+    margin-bottom: 10px;
+}
+
+table{
+    color: #fff;
+    font-size: 14px;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+thead{
+    background-color: rgba(130, 15, 93, 0.4);
+}
+
+th{
+    padding: 20px 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+td{
+    padding: 15px;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+    border-right: solid 1px rgba(255, 255, 255, 0.2) ;
+}
+tbody{
+    background-color: rgb(127, 144, 255);
+}
+tbody tr:hover{
+    background: rgb(89, 176, 147);
+}
+
+#loading-contenedor {
+    display: none; /* Ocultar por defecto */
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+#loading-gif {
+    width: 100px; /* Ajusta el tamaño del GIF según tus necesidades */
+    height: 100px; /* Ajusta el tamaño del GIF según tus necesidades */
+}
+
+#loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
